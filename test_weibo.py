@@ -6,9 +6,9 @@ CALLBACK_URL = 'www.renren.com/yuanpuhao' # callback url
 
 client = APIClient(app_key=APP_KEY, app_secret=APP_SECRET, redirect_uri=CALLBACK_URL)
 
-access_token = "2.00JjFaTB0HR4qN6e7fe0fda00zhShF"
-expires_in = "1529485386"
+access_token = "2.00ufE2sD0HR4qNe6cf275dacOn_iEB"
+expires_in = "1372014057"
 
 client.set_access_token(access_token, expires_in)
 print client.statuses.user_timeline.get()
-print client.statuses.update.post(status=u"Puhao Yuan the stupid guy is doing stupid thing!")
+print client.statuses.update.post(status=u"Stupid guy is doing stupid thing!")
