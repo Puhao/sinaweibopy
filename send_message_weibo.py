@@ -1,4 +1,6 @@
+# coding=utf-8
 from weibo import *
+import time
 
 APP_KEY = '204574897' # app key
 APP_SECRET = '16090a4faf9ffdf06c9d377f26f4abd7' # app secret
@@ -23,4 +25,7 @@ expires_in = r.expires_in
 
 client.set_access_token(access_token, expires_in)
 #print client.statuses.user_timeline.get()
-print client.statuses.update.post(status=u"Stupid guy is doing stupid thing!")
+while True:
+	Speak = "我真的会说中文!我去年买两个表！ " + time.strftime('%Y-%m-%d-%H-%M-%S-%A',time.localtime(time.time()))
+	print client.statuses.update.post(status= Speak)
+	time.sleep(3614)

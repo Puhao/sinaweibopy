@@ -1,3 +1,4 @@
+# coding=utf-8
 from weibo import *
 
 APP_KEY = '204574897' # app key
@@ -11,4 +12,4 @@ expires_in = "1372014057"
 
 client.set_access_token(access_token, expires_in)
 print client.statuses.user_timeline.get()
-print client.statuses.update.post(status=u"Stupid guy is doing stupid thing!")
+print client.statuses.update.post(status="我其实会说中文！")
